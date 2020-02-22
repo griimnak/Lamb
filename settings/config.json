@@ -1,0 +1,9 @@
+{
+    "token": "",
+
+    "strings_locale": "en_US",
+    "command_prefix": "!",
+
+    "temp_dir": "./lamb/temp/",
+    "cogs_dir": "./cogs/"
+}
