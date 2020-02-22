@@ -105,12 +105,12 @@ Accessing the Bot's memory and state data
 from lamb import memory 
 
 print(memory) # memory of lamb instance
+>>>> {'active': True, 'py_version': (3, 6), 'lamb_version': '0.0', 'token': '', 'command_prefix': '#', 'temp_dir': './lamb/temp/', 'cogs_dir': './cogs/', 'strings_locale': 'en_US', 'strings': {'greeting': 'Welcome to the server.', 'banned': '{user} has been banned from the server.'}}
+
 
 # you can also set memory variables like so
 memory["custom_var"] = "my custom value"
 memory["command_prefix"] = "$" # updating a value
-
->>>> {'active': True, 'py_version': (3, 6), 'lamb_version': '0.0', 'token': '', 'command_prefix': '#', 'temp_dir': './lamb/temp/', 'cogs_dir': './cogs/', 'strings_locale': 'en_US', 'strings': {'greeting': 'Welcome to the server.', 'banned': '{user} has been banned from the server.'}}
 ```
 
 Serving
