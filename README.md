@@ -1,6 +1,6 @@
 # Lamb
 
-Light ass Management Bot
+*WIP* Light ass Management Bot
 
 
 A simple and lightweight all-purpose Discord bot wireframe created with discord.py
