@@ -1,9 +1,9 @@
 # Lamb
 
-*WIP* Light ass Management Bot
+Light ass Management Bot
 
 
-A simple and lightweight all-purpose Discord bot wireframe created with discord.py
+A simple and lightweight all-purpose Discord bot created with discord.py
 
 Total dependencies: <b>3</b>
 ###### youtube_dl, discord, pynacl
