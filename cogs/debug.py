@@ -6,12 +6,6 @@ class DebugCommands(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    # @commands.Cog.listener()
-    # print to console login success
-    # async def on_ready(self):
-    #    print(f'[{datetime.now().strftime("%b-%d-%Y %I:%M:%S %p")}] Login successfull!')
-    #    print(f'[{datetime.now().strftime("%b-%d-%Y %I:%M:%S %p")}] SESSION: {self.bot.user}')
-
     @commands.command()
     async def debug(self, ctx):
         """Returns the lamb.memory json object"""
@@ -30,7 +24,7 @@ class DebugCommands(commands.Cog):
         await ctx.send(f'Pong! `{self.bot.latency}`')
 
     @commands.command()
-    async def commands(self, ctx):
+    async def cmds(self, ctx):
         """Returns number of Cogs registered"""
         await ctx.send(f'`{len(self.bot.commands)}` including `help` command')
 

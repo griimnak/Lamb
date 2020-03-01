@@ -7,7 +7,6 @@ from .helpers import load_settings, datetime_now
 
 def serve_now():
     """Creates bot instance after lamb.load_settings"""
-    # Check token
     if memory["token"] == "":
         exit("Please supply your token to settings/config.json")
     print(f'[{datetime_now()}] Token provided: {memory["token"]}')
