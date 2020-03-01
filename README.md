@@ -15,6 +15,8 @@ Total dependencies: <b>3</b>
 &#10004; Music streaming (like Rythm Bot)<br/>
 &#10004; Clean and extendable bot structure <br/>
 
+![Alt Text](https://github.com/griimnak/Lamb/blob/master/lamb/temp/Screenshot_117.png)
+
 Prerequisites
 ------------
 #### Windows
