@@ -13,6 +13,7 @@ Total dependencies: <b>3</b>
 &#10004; Locale system<br/>
 &#10004; Config system<br/>
 &#10004; Music streaming (like Rythm Bot)<br/>
+&#10004; League Of Legends tracker<br/>
 &#10004; Clean and extendable bot structure <br/>
 
 ![Alt Text](https://github.com/griimnak/Lamb/blob/master/lamb/temp/Screenshot_126.png)
