@@ -1,12 +1,12 @@
+from datetime import datetime
 import json
 import re
-from datetime import datetime
 
 from .bot import memory
 
 
 def datetime_now():
-    """Recycled alias"""
+    """Returns current date and time in preferred format"""
     return datetime.now().strftime("%b-%d-%Y %I:%M:%S %p")
 
 

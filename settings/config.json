@@ -5,5 +5,12 @@
     "command_prefix": "!",
 
     "temp_dir": "./lamb/temp/",
-    "cogs_dir": "./cogs/"
+    "cogs_dir": "./cogs/",
+
+
+    "riot_api" : {
+        "token": "",
+        "region": "na1",
+        "lol_version": "10.4.1"
+    }
 }

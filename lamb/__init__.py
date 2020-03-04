@@ -43,3 +43,4 @@ def serve_now():
         print(f'[{datetime_now()}] SERVERS: ({server_count}) {", ".join(server_names)}')
 
     bot.run(memory["token"])
+
