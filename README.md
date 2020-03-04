@@ -5,8 +5,8 @@ Light ass Management Bot
 
 A simple and lightweight all-purpose Discord bot created with discord.py
 
-Total dependencies: <b>3</b>
-###### youtube_dl, discord, pynacl
+Total dependencies: <b>4</b>
+###### youtube_dl, discord, pynacl, requests
 
 
 #### Current Features
