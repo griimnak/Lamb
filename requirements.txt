@@ -1,4 +1,3 @@
 discord
-requests
 youtube_dl
 pynacl

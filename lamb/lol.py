@@ -1,7 +1,7 @@
-from urllib import parse
 import requests
+from urllib import parse
 
-from lamb import memory
+from .bot import memory
 
 
 class LoLException(Exception):

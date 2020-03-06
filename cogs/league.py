@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from statistics import mode
 from urllib import parse
 
 from lamb.helpers import datetime_now
@@ -63,9 +62,9 @@ class LoLTrackerCommands(commands.Cog):
             champs.append(matches[match]["champion"])
             lanes.append(matches[match]["lane"])
 
-        role = mode(roles)
-        lane = mode(lanes)
-        champ_id = mode(champs)
+        role = max(set(roles), key=roles.count)
+        lane = max(set(lanes), key=lanes.count)
+        champ_id = max(set(champs), key=champs.count)
 
         champ = self.api.get_champ_by_id(champ_id)
         mastery = self.api.get_mastery_data(data["id"], champ_id)

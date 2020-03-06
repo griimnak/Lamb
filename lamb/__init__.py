@@ -3,6 +3,7 @@ from discord.ext import commands
 
 from .bot import memory, __version__, __author__
 from .helpers import load_settings, datetime_now
+from .helpers import regex, re
 
 
 def serve_now():
@@ -41,6 +42,21 @@ def serve_now():
             server_names.append(f'{server.name}[{server.id}]')
 
         print(f'[{datetime_now()}] SERVERS: ({server_count}) {", ".join(server_names)}')
+
+    @bot.listen()
+    async def on_message(message):
+        if message.author == bot.user:
+            return
+        if message.author.bot: return
+
+        channel = message.channel.name
+        if memory["music_channel"]["links_only"]:
+            if channel == memory["music_channel"]["channel_name"]:
+                url = re.match(regex, message.content)
+                if url is None:
+                    with message.channel.typing():
+                        await message.delete()
+                    await message.channel.send(f'{message.author.mention} - This channel is only for music links.')
 
     bot.run(memory["token"])
 

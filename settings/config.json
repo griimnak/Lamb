@@ -1,5 +1,9 @@
 {
     "token": "",
+    "music_channel": {
+        "channel_name": "music",
+        "links_only": true
+    },
 
     "strings_locale": "en_US",
     "command_prefix": "!",
